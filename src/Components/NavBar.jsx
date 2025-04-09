@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import Main from "./Main";
 
 const NavBar = function () {
   return (
@@ -12,9 +14,9 @@ const NavBar = function () {
               alt="Netflix logo"
             />
             <div className="container-fluid">
-              <a className="navbar-brand text-light" href="#">
+              <Link className="nav-link text-light" to="/">
                 Home
-              </a>
+              </Link>
               <button
                 className="navbar-toggler"
                 type="button"
@@ -29,13 +31,9 @@ const NavBar = function () {
               <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav">
                   <li className="nav-item">
-                    <a
-                      className="nav-link active text-light"
-                      aria-current="page"
-                      href="#"
-                    >
+                    <Link className="nav-link text-light" to="/tvshow">
                       TV Shows
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
                     <a className="nav-link text-light" href="#">
