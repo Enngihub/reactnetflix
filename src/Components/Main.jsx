@@ -31,7 +31,7 @@ const Main = () => {
       <div className="container mt-3 bg-dark">
         <div className="row">
           {data.map((item) => (
-            <div key={item.imdbID} className="col-xs-12 col-sm-6 col-md-2 mb-3">
+            <div key={item.imdbID} className="col-sm-6 col-md-4 col-lg-2 mb-3">
               <div className="card h-100 p-0">
                 <img
                   src={item.Poster}

@@ -1,65 +1,59 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+
 import Main from "./Main";
 
 const NavBar = function () {
   return (
     <div className="container d-flex justify-content-around bg-dark">
       <div className="row w-100">
-        <div className="col-sm-12 col-md-8">
+        <div className="col-12 col-md-8">
           <nav className="navbar navbar-expand-lg bg-dark">
             <img
               className="w-25"
               src="/assets/netflix_logo.png"
               alt="Netflix logo"
             />
-            <div className="container-fluid">
-              <Link className="nav-link text-light" to="/">
-                Home
-              </Link>
-              <button
-                className="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav"
-                aria-controls="navbarNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span className="navbar-toggler-icon"></span>
-              </button>
-              <div className="collapse navbar-collapse" id="navbarNav">
-                <ul className="navbar-nav">
-                  <li className="nav-item">
-                    <Link className="nav-link text-light" to="/tvshow">
-                      TV Shows
-                    </Link>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link text-light" href="#">
-                      Movies
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link text-light" href="#">
-                      Recently Added
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a
-                      className="nav-link disabled text-light"
-                      aria-disabled="true"
-                    >
-                      My List
-                    </a>
-                  </li>
-                </ul>
-              </div>
+            <div
+              className="container-fluid justify-content-center
+            "
+            >
+              <ul className="navbar-nav">
+                <li className="nav-item">
+                  <Link className="nav-link text-light" to="/">
+                    Home
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link text-light" to="/tvshow">
+                    TV Shows
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link text-light" href="#">
+                    Movies
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link text-light" href="#">
+                    Recently Added
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a
+                    className="nav-link disabled text-light"
+                    aria-disabled="true"
+                  >
+                    My List
+                  </a>
+                </li>
+              </ul>
             </div>
           </nav>
         </div>
 
-        <div className="col-sm-12 col-md-4">
+        <div className="col-12 col-md-4">
           <nav className="navbar bg-dark">
             <div className="container-fluid">
               <a className="navbar-brand">
